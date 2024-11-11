@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "629073ae-b04d-45b3-8c0c-ac6d700f677c",
+		"name": "JLabs basic intern dev assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30431410"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nametest\",\r\n    \"email\": \"nametest@email.com\",\r\n    \"password\": \"Aa1!aaaa\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/users/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"email\": \"Jake@email.com\",\r\n    \"password\": \"Aa1!aaaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "READ All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/users/"
+			},
+			"response": []
+		}
+	]
+}
